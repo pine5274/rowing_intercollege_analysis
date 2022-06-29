@@ -1,0 +1,2 @@
+# rowing_intercollege_analysis
+2000年～2021年までのインカレデータを用いた統計的分析を行う。
