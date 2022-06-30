@@ -2,3 +2,4 @@
 **/_Env.js
 *.ipynb
 .md
+__pycache__
