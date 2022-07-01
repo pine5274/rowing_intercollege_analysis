@@ -53,8 +53,8 @@ def calc_trends(df, boat_type):
     plt.ylabel('speed[m/s]', fontsize=12)  # y軸ラベル
     plt.grid()
     plt.legend()
+    plt.savefig('./../dst/prognostic_time/win/' + boat_type + '.jpg')
     plt.figure()
-    plt.savefig('./../dst/prognostic_time/' + boat_type + '.jpg')
 
     return  median([PT_1, PT_2, PT_3])
 
@@ -82,4 +82,4 @@ for speed in df_PT['speed[m/s]']:
 
 df_PT['time'] = time
 df_PT['lap'] = lap
-df_PT.to_csv('./../dst/prognostic_time/PT_time.csv')
+df_PT.to_csv('./../dst/prognostic_time/PT_time_win.csv')
